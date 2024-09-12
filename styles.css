@@ -1,11 +1,33 @@
-*{
+
     /**
     border-box: räknar med border, padding och margin i din width och height
     content-box: adderar border, padding och margin till din width och height
-    bra att starta med
+    ((bra att starta med))
+    ID är unikt och kan bara användas en gång
+    class - har ingen begränsning
+    Använd class så mycket som möjligt.
+    Pseudoklaser p:hover {} - typ ge muspekaren om du hovrar
+                 li a:visited besökta knappar(sidor ska byta färg)
+    Direct Child Selector X>Y
+                <div class="container">
+                    <ul> - den här blir targettad
+                        <li>
+                            <ul>
+
+    First child     
+                ul li:first-child {
+                    color: hotpink;
+                }
+     Last child     
+                ul li:last-child {
+                    color: hotpink;
+                }
+
     */
-    box-sizing: border-box; 
+*{
+    box-sizing: border-box;
 }
+
 
 body {
     width: 100vw;
